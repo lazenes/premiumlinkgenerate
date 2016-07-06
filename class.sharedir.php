@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_NOBODY, 0);
 $response  = curl_exec($ch);
 ## Display file status
 $result= json_decode($response);
-echo $lang[9].$result->status."<br/>";
+echo $lang[11].$result->status."<br/>";
 echo $lang[12].$result->filename."<br/>";
 if ($result->filesize_mb <= 150){
 echo  $lang[9].$result->filesize_mb." MB"."<br/>";
